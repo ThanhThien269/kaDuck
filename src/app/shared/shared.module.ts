@@ -17,13 +17,17 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { SideBarComponent } from '../components/side-bar/side-bar.component';
+import { ToolBarComponent } from '../components/tool-bar/tool-bar.component';
 
 
 @NgModule({
   declarations: [
+    SideBarComponent,
+    ToolBarComponent,
   ],
   imports: [
     CommonModule,
@@ -46,10 +50,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTreeModule,
     MatExpansionModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
+
   ],
   exports:[
-    CommonModule,
+
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
@@ -69,8 +73,11 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTreeModule,
     MatExpansionModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
-    MatSidenavModule
+
+    MatSidenavModule,
+    SideBarComponent,
+    ToolBarComponent,
+
   ]
 })
 export class SharedModule { }
