@@ -17,6 +17,7 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -40,7 +41,8 @@ import {MatTreeModule} from '@angular/material/tree';
     MatSortModule,
     MatTabsModule,
     MatTooltipModule,
-    MatTreeModule
+    MatTreeModule,
+    BrowserAnimationsModule
   ],
   exports: [
     CommonModule,
@@ -60,7 +62,8 @@ import {MatTreeModule} from '@angular/material/tree';
     MatSortModule,
     MatTabsModule,
     MatTooltipModule,
-    MatTreeModule
+    MatTreeModule,
+    BrowserAnimationsModule
   ]
 })
 export class SharedModule { }
