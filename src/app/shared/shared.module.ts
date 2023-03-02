@@ -17,7 +17,8 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
@@ -26,7 +27,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
   declarations: [
   ],
   imports: [
-    CommonModule,
+    FormsModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
@@ -46,10 +47,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTreeModule,
     MatExpansionModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
+
   ],
   exports:[
-    CommonModule,
+    FormsModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
@@ -69,7 +70,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTreeModule,
     MatExpansionModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
+
     MatSidenavModule
   ]
 })
