@@ -23,7 +23,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -46,7 +47,6 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatExpansionModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-
   ],
   exports:[
     CommonModule,
@@ -70,6 +70,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatExpansionModule,
     MatSidenavModule,
     BrowserAnimationsModule,
+    MatSidenavModule
   ]
 })
 export class SharedModule { }
