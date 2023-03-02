@@ -18,7 +18,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 @NgModule({
   declarations: [
@@ -42,8 +44,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
+    MatExpansionModule,
+    MatSidenavModule,
     BrowserAnimationsModule,
-    MatSidenavModule
   ],
   exports:[
     CommonModule,
@@ -64,6 +67,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
+    MatExpansionModule,
+    MatSidenavModule,
     BrowserAnimationsModule,
     MatSidenavModule
   ]
