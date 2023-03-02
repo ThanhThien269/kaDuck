@@ -19,10 +19,13 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     FormsModule,
     MatButtonModule,
@@ -42,6 +45,9 @@ import { FormsModule } from '@angular/forms';
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
+    MatExpansionModule,
+    MatSidenavModule,
+
   ],
   exports:[
     FormsModule,
@@ -62,6 +68,10 @@ import { FormsModule } from '@angular/forms';
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
+    MatExpansionModule,
+    MatSidenavModule,
+
+    MatSidenavModule
   ]
 })
 export class SharedModule { }

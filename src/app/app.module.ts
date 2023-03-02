@@ -9,11 +9,13 @@ import { SharedModule } from './shared/shared.module';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideBarComponent
+    SideBarComponent,
+    ToolBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     SharedModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth())
+
   ],
   providers: [],
   bootstrap: [AppComponent]
