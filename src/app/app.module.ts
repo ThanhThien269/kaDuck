@@ -14,8 +14,6 @@ import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SideBarComponent,
-    ToolBarComponent,
   ],
   imports: [
     BrowserModule,

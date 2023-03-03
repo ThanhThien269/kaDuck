@@ -1,0 +1,23 @@
+<div>
+  <app-tool-bar (newOpenSideBarEvent)="drawer.toggle()"></app-tool-bar>
+</div>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <app-side-bar></app-side-bar>
+  </mat-drawer>
+  <mat-tab-group>
+    <mat-tab label="RECENT">
+      <div>Title here</div>
+    </mat-tab>
+    <mat-tab label="FAVOURITES">
+      <div id="rec_recent">
+        <div id="rec_recent_checkbox">
+          <input type="checkbox">
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</mat-drawer-container>
+<div>
+</div>
+
